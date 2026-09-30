@@ -1,0 +1,115 @@
+Fullstack webdevelopment
+
+
+webdevelopment
+process of creating a website
+
+
+website
+it is a collection of webpages which are connected together
+
+webpage
+it is a document that display the content that can be read 
+by browser
+
+fullstack
+frontend + backend + database
+
+
+frontend 
+deals with ui ,ux , responsiveness design,api calling
+
+backend
+api building
+authentification-signup,login
+authorization
+
+
+frontend tech
+
+static webpage
+html - structure
+css - stylings
+bootstrap- css framework
+dynamic webpage
+js-dynamic -addtocart
+
+react-framework -dynamic
+
+
+
+backend
+language- pyton,java,node js
+frameworks- fastapi,django,flask,springboot,express js
+
+
+
+HTML- 
+hypertext markup language
+
+hypertext- a text reference to another text
+markup- a set of rules that defines how content should be
+       displayed on the browser
+
+html is standard markup language that is used to create
+structure for a web pages- html 5
+it contains series of elements which are represented by tags
+
+
+tag
+<resword>   ---open taag
+</resword> ---closing tag
+
+element
+opentag + content + closingtag
+<h1>My website heading</h1>
+
+
+vs code
+settings icon---settings----auto save --afterdelay
+
+
+extensions
+live server
+live preview
+prettier
+es7+ react
+
+pair tags or container tag
+<h1></h1>
+
+void tags or self closing or empty tags
+<!DOCTYPE html>
+img tag
+
+basic structure of html
+declaration- it specifies the type and version of the doc
+<!DOCTYPE html>
+root element- fontsize -16px 
+<html>
+it is used to add title, meta tags, third party links
+<head>
+<title>my page</title>
+</head>
+<body>
+content webpage
+</body>
+</html>
+
+
+h1 - h6
+
+<h1>highest heading</h1>- 32px
+<h2></h2>
+<h3></h3>
+<h6>smallest heading</h6>
+
+
+paragraph
+<p> tag is used to define the paragraph
+    
+
+
+
+
+

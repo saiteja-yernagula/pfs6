@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    tags are divided based on behavior
+    1) block level elements
+    are the elements which occupies complete spacce and which always 
+    starts on new line
+    ex: h1,p,tabe,ul,ol
+
+    2) inline elements
+    are the elements which takes necessary space and doesnt starts on new line
+    ex: a ,img
+
+
+    div and span
+    div is a block level elements used to form the group of elements for applying styles
+
+    span
+    it is a inline element user to form the group of text for apply styles
+
+    <div style="background:lightcoral">
+        <h1><span style="background:black;color:red;">Front</span><span style="background:green;">end</span> </h1>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+    </ul>
+   </div>
+    
+   <div style="background:lightseagreen">
+     <h1>backend</h1>
+    <ul>
+        <li>java</li>
+        <li>python</li>
+    </ul>
+   </div>
+
+    <h1>heading1</h1><h1>heading2</h1>
+    <a href="">link1</a>
+    <a href="">link2</a>
+
+    semantics- are the tags which conveys meaning to the browser and developer
+    
+    <header>content</header>
+    <nav>content</nav>
+    <section>content</section>
+    <section>content</section>
+    <aside>content</aside>
+    <article>content</article>
+    <footer>content</footer>
+
+    forms
+    forms are used to collect the data from the user and allowing user
+    to submit data to the server
+    login,signup pages,register,contact ,
+
+    forms are defined with form tag
+    form fields  are defined with input tag
+    label tag and placeholder used to provide the hint\
+
+
+    type-it will control the behavior of input
+    name- it will carry the data to the backend as key value pairs
+    for id - it will connect the label to the input
+    required-it specifies that a field must contain something
+
+    form
+    method="GET"
+    method="POST"
+
+    formsubmit.co
+  
+    -->
+    <form action="" method="POST">
+        <label for="un">enter username:</label>
+        <input id="un" type="text" name="uname" placeholder="username"> <br>
+        <label for="pwd">enter password:</label>
+        <input  id="pwd" type="password" name="password" placeholder="password"> <br>
+
+        enter ur mail
+        <input type="email"><br>
+        enter ur mobile number
+        <input type="number"> <br>
+        book your appointment
+        <input type="date"> <br>
+        book your slot
+        <input type="datetime-local"><br>
+        upload your files
+        <input type="file"><br>
+        search your product
+        <input type="search"><br>
+        rate yourself
+        <input type="range"><br>
+        <button type="reset">reset</button>
+
+        <button type="submit">submit</button>
+    </form>
+
+    <form action="">
+        choose your stack <br>
+        <input id="py" type="radio" name="stack" value="pythonstack">
+        <label for="py">Python stack</label> <br>
+        <input id="js" type="radio"  name="stack" value="javastack">
+        <label for="js" >java stack</label> <br>
+        <input id="mrn" type="radio"  name="stack" value="mernstack">
+        <label  for="mrn">mern stack</label> <br>
+        
+        choose your skills <br>
+        <input type="checkbox" name="skills" value="html">
+        <label for="">html</label>
+        <input type="checkbox" name="skills" value="css">
+        <label for="">css</label>
+        <br>
+        select your branch
+        <select name="branch" id="">
+            <option value="vizag">vizag</option>
+            <option value="hyd">hyd</option>
+        </select>
+
+        <button type="submit">submit</button>
+    </form>
+
+</body>
+</html>
