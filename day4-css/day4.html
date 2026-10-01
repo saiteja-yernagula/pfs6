@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+      <!-- 
+    css- cascading stylesheets
+    cascading-flowing
+    stylesheet- styles -doc
+
+    it is a styling language that is used to describe the 
+    presentation of a webpage
+    it deals with colors,backgrounds,animations,layouts and responsiveness
+
+    how to insert css
+    1) inline css
+    in inline stlyes are embeded within the tag using style attribute
+    <h1 style='background:red;'>Heading</h1>
+    2) internal css
+    styles are embeded using style tag in head section
+    selector{
+       property:value;
+    } 
+    <style>
+        h2{
+        color:green;
+        }
+    </style>
+    <h2>heading 2 </h2>  
+
+    3) external
+    style are embeded in different file .css
+    demo.css
+    h3{
+    color:brown;
+    }
+    <link rel="stylesheet" href="demo.css">
+
+
+    inline having high precedence
+    internal -external ---it depends
+
+
+    selector
+    it is used to target the htmll for applying styles
+    1) simple selectors
+      a) tagname or element selctor
+        h1{
+        color:red;
+        }
+
+      b)  class selector
+      it is used to apply the styles for multiple elements
+      it is denoted by .
+      .c1{
+      color:green;
+      background:orange;
+      }
+     
+
+      c) id selector
+      it is used to apply the styles uniquely for single element
+      it is denoted by #
+      #el1{
+      background:brown;
+      }
+       <div id='el1' class='c1'>content</div>
+      <h1 class='c1'>heading</h1>
+    2) combinators
+    3) pseudo class
+
+    
+    id having high specificity
+    class having high
+    tagname
+
+
+  
+    -->
+    <style>
+        /* h2{
+            color:green;
+            background:yellow;
+        }
+        div{
+            color:green;
+        } */
+
+        .fe{
+            background:lightcoral;
+        }
+        .be{
+            background:lightseagreen;
+        }
+        .fetitle,.betitle{
+            color:white;
+        }
+       
+        #e1,#e2{
+            color:red;
+        }
+/* 
+        #demo{
+            color:orange;
+        } */
+        /* .c1{
+            color:yellow;
+        } */
+
+        /* 
+          box model
+    it describtes the presentation of an element'
+    it contains four components
+    1) content
+       width and height
+    2) padding
+    it is space inside of an element
+    padding:20px;
+    padding:10px 20px 30px 40px;
+            top  right bottom left
+    padding:10px  30px   40px;
+            top  right/left bottom 
+        padding:10px     40px;
+            top/bottom  right/left  
+    3) border
+    border: 2px solid orange;
+           width style color;
+    
+    solid
+    dashed
+    double
+    dotted
+    ridge
+    groove
+    none
+
+    4) margin
+    it is space around an element
+     margin:20px;
+    margin:10px 20px 30px 40px;
+            top  right bottom left
+    margin:10px  30px   40px;
+            top  right/left bottom 
+        margin:10px     40px;
+            top/bottom  right/left 
+
+     */
+        div{
+            background:green;
+            width:300px;
+            height:200px;
+            padding:20px;
+            padding:10px 20px 30px 40px;
+            padding:10px  30px 40px;
+            padding:10px   40px;
+    border: 2px solid orange;
+    border: 4px dotted orange;
+    border: 4px dashed orange;
+    border: 4px double orange;
+    border: 4px ridge orange;
+    border: 4px groove orange;
+    border-radius:50%;
+    border-radius:20px;
+    margin:20px;
+    margin:20px 30px 40px 50px;
+    margin:20px 30px  50px;
+    margin:20px   50px;
+        }
+    *{
+        color:blueviolet;
+    }
+        </style>
+</head>
+<body>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia perferendis itaque dignissimos quidem eveniet culpa, nam numquam dicta voluptate, ullam officia praesentium cum nulla rem exercitationem quisquam nobis voluptatibus voluptatum.</p>
+    <div id="demo" class="c1">selectors</div>
+    <div id="demo" class="c1">selectors</div>
+
+    <h1 class="fe fetitle">frontend</h1>
+    <h2 class="fe">React</h2>
+    <h3 class="fe" id="e1">javascript</h3>
+    <h1 class="be betitle">backend</h1>
+    <h2 class="be">Flask</h2>
+    <h3 class="be" id="e2">python</h3>
+
+</body>
+</html>
