@@ -11,7 +11,7 @@
         color:white;
         padding:3%;
       }
-      header{
+      header,footer{
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -96,6 +96,61 @@
             transform: translate(0,-10px);
 
         }
+
+        .parent img{
+            width:100%;
+            height:300px;
+        }
+        .parent{
+            display:flex;
+            gap:20px;
+            justify-content: space-evenly;
+        }
+        .child{
+            flex-basis:30%;
+            padding:2%;
+              background:rgb(43, 41, 41);
+        }
+
+        table{
+            width:100%;
+        }
+        table,td,th{
+            padding:3%;
+            border-collapse: collapse;
+        }
+        td,th{
+            border:1px solid white;
+        }
+        th{
+            background:green;
+        }
+
+
+        .s6{
+            display:flex;
+        }
+        .s6>div{
+            flex-basis:50%;
+            font-size:1.5rem;
+            line-height:1.7;
+        }
+        li::marker{
+            font-size:2rem;
+            color:green;
+        }
+
+
+        @media screen and (width<500px){
+          html{
+            font-size:10px;
+          }
+          .s1,.container,.parent,.s6,header{
+            flex-direction:column;
+          }
+        }
+
+        
     </style>
 </head>
 <body>
@@ -152,6 +207,79 @@
             </div>
         </div>
     </section>
+
+    <section class="s4">
+        <h1>My Projects</h1>
+        <div class="parent">
+            <div class="child">
+                <div><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                <h1>Portfolio Website</h1>
+                <p>A personal portfolio website built using HTML to showcase my skills and projects.</p>
+                <button class="btn2">view project</button>
+            </div>
+             <div class="child">
+                <div><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                <h1>Student Registration Form</h1>
+                <p>A simple registration form created using HTML form elements.</p>
+                <button class="btn2">view project</button>
+            </div>
+             <div class="child">
+                <div><img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=1200&auto=format&fit=crop" alt=""></div>
+                <h1>Simple Calculator</h1>
+                <p>A basic calculator built using HTML, CSS and JavaScript.</p>
+                <button class="btn2">view project</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="s5">
+        <h1>Education</h1>
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td>XYZ High School</td>
+                <td>2018 - 2020</td>
+                <td>New York, USA</td>
+            </tr>
+            <tr>
+                <td>Bachelor Of Computer Science</td>
+                <td>XYZ University</td>
+                <td>2022 - 2026</td>
+                <td>New York, USA</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="s6">
+        <div>
+            <h1>Achievements</h1>
+            <ul>
+                <li> Completed HTML & CSS fundamentals course.</li>
+                <li> Built multiple small projects using HTML.</li>
+                <li>Consistently learning and improving every day.</li>
+                <li> Practicing problem solving and logical thinking.</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Contact</h1>
+            <ul>
+                <li> Email: johndoe@example.com</li>
+                <li> Phone: +123 456 7890</li>
+                <li> Website: www.johndoe.com</li>
+                <li> Location: New York, USA</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <h3>© 2026 John Doe. All rights reserved.</h3>
+        <p>icons</p>
+    </footer>
 
 
 
