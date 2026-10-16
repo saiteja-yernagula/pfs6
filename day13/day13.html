@@ -191,47 +191,46 @@
 
         */
 
-        let data = [
-            { productid: 243, status: 'expired' },
-            { productid: 22243, status: 'expired' },
-            { productid: 2473, status: 'not expired' },
-            { productid: 2463, status: 'not expired' },
-            { productid: 2143, status: 'expired' }
-        ]
-        for (let i of data) {
-            if (i.status == 'expired') {
-                continue
-            }
-            console.log(i)
-        }
+        // let data = [
+        //     { productid: 243, status: 'expired' },
+        //     { productid: 22243, status: 'expired' },
+        //     { productid: 2473, status: 'not expired' },
+        //     { productid: 2463, status: 'not expired' },
+        //     { productid: 2143, status: 'expired' }
+        // ]
+        // for (let i of data) {
+        //     if (i.status == 'expired') {
+        //         continue
+        //     }
+        //     console.log(i)
+        // }
 
-        let students = [
-            { name: 'john', marks: 90 },
-            { name: 'jessy', marks: 60 },
-            { name: 'jack', marks: 50 },
-            { name: 'jane', marks: 30 },
-        ]
+        // let students = [
+        //     { name: 'john', marks: 90 },
+        //     { name: 'jessy', marks: 60 },
+        //     { name: 'jack', marks: 50 },
+        //     { name: 'jane', marks: 30 },
+        // ]
 
-        https://fakestoreapi.com/products
-        let container=document.getElementById('container')
-        for (let i of students) {
-            let grade = ''
-            if (i.marks > 70) {
-                grade = "A"
-            } else if (i.marks > 35) {
-                grade = "B"
-            } else {
-                grade = "F"
-            }
-            let output=`
-            <div>
-              <h1>Name: ${i.name}</h1>
-              <p>marks:${i.marks}</p>
-              <p>grade:${grade}</p>
-            </div>
-            `
-            container.innerHTML+=output
-        }
+        // let container=document.getElementById('container')
+        // for (let i of students) {
+        //     let grade = ''
+        //     if (i.marks > 70) {
+        //         grade = "A"
+        //     } else if (i.marks > 35) {
+        //         grade = "B"
+        //     } else {
+        //         grade = "F"
+        //     }
+        //     let output=`
+        //     <div>
+        //       <h1>Name: ${i.name}</h1>
+        //       <p>marks:${i.marks}</p>
+        //       <p>grade:${grade}</p>
+        //     </div>
+        //     `
+        //     container.innerHTML+=output
+        // }
         let products=[
   {
     "id": 1,
@@ -474,6 +473,22 @@
     }
   }
 ]
+
+   let container1=document.getElementById('container')
+
+for (let i of products){
+ 
+  let output=`
+  <div>
+   <h1>${i.title}</h1>  
+   <h1>${i.price}</h1>  
+   <img src=${i.image}>
+  </div>
+  `
+  container1.innerHTML+=output
+  console.log(output)
+
+}
     </script>
 </body>
 

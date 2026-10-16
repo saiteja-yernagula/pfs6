@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <button onclick="inp('1')">1</button>
+    <button onclick="inp('2')">2</button>
+    <button onclick="inp('3')">3</button>
+    <br>
+    <button onclick="inp('+')">+</button>
+    <button onclick="inp('-')">-</button>
+    <button onclick="evl()">evl</button>
+    <button onclick="ac()">ac</button>
+    
+    <script>
+        /*
+        functions 
+        it is a reusable blocck of code that is used to perform
+        specific action when something invokes it
+
+        functions are defined with function keyword followed by 
+        name followed by ()may include parameters followed by {} of codee
+
+        //function declartion- static
+        function greet(){
+        console.log('hello welcome to the page')
+        }
+        //invoking
+        greet()
+
+        parameters are like local variable name 
+        and arguments are the value
+        
+        
+        //function declartion
+        function greet(){
+            console.log('hello welcome to the page')
+        }
+        //invoking
+        greet()
+
+        function greetd(name){
+            console.log(`hello ${name} welcome to the page`)
+        }
+        greetd('john')
+        greetd('jessy')
+
+        let input=''
+        function inp(val){
+            input+=val
+            console.log(input)
+        }
+        function evl(){
+            console.log(eval(input))
+        }
+
+        function ac(){
+            input=""
+            console.log('done')
+        }
+        
+        
+        points
+        1) function name stores function definiton
+        2) logging of the function calling will give the return value
+           return
+           it is used to store the end value
+           return is used to terminate the function
+        3) statements after return will not be executed 
+        4) named function can only be hoisted
+
+        types of functions
+        1) named functions
+        2) arrow functions
+        3) anonymous function
+        4) self invoking
+        5) callback
+        */ 
+
+        greet()
+        function greet(){
+            console.log('hello')
+            return 'hi'
+            console.log('welcome')
+        }
+
+        greet()//calling
+        console.log(greet)//definition
+        console.log(greet())//calling
+        </script>
+</body>
+</html>
