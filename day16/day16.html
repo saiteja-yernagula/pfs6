@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="registerform">
+        <input type="text" id="inp1" placeholder="enter name"><br>
+        <input type="text" id="inp2" placeholder="enter password"><br>
+        <button type="submit">submit</button> 
+    </form>
+    
+    <script>
+        let registerform=document.getElementById('registerform')
+        registerform.onsubmit=function(event){
+            //it will prevent the automatic form submission
+            event.preventDefault()
+            console.log('form is submitted')
+            //1st using event
+            console.log(event.target[0].value)
+            console.log(event.target[1].value)
+
+            //2nd way
+            let inp1=document.getElementById('inp1')
+            let inp2=document.getElementById('inp2')
+            console.log(inp1.value,inp2.value)
+        }
+        /*
+        regex- regular expressions
+        it is used to define a specific patterns for the validations
+
+
+        /hello/
+        [a-z]
+
+        multiple
+        [a-z]+
+
+        alphanumerical
+        /[a-zA-Z0-9]+/
+
+        symbols
+        [@#$]
+
+        mobile number
+        /[0-9]{10}/
+
+        email
+        name- [a-z0-9_.]+
+        @ -@
+        gmail- [a-z]+
+        .- \.
+        com- [a-z]{2,3}
+
+        let creditcardpattern=/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}/
+
+        password
+        one capital- (?=.*[A-Z])
+        one lower-(?=.*[a-z])
+        one symbol- (?=.*[@#$%])
+        one number-(?=.*[0-9])
+        lengt-{8}
+        
+        */ 
+       let emailpattern=/[a-z0-9_.]+@[a-z]+\.[a-z]{2,3}/
+       let emailtext='John@gmail.com'
+       console.log(emailtext.match(emailpattern))
+       let passwordpattern=/(?=.*[A-Z])(?=.*[a-z])(?=.*[@#$%])(?=.*[0-9]).{8}/
+       let text='John#123'
+       console.log(text.match(passwordpattern))
+
+    </script>
+</body>
+</html>
