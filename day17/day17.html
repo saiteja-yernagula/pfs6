@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        
+        synchronous code
+        which executes line by line which doesnt takes time
+        
+        asynchronous code- parallel level of execution
+        which executes parallely and takes time
+        api calling,timers, localstorage
+
+        event loop mechanism
+        callstack
+        webapi
+        callback que
+        event loop
+
+        console.log('first')
+        
+        setTimeout(()=>{
+            console.log('second')
+        },0)
+
+        console.log('third')
+
+        promises
+        it represents the eventual completion or failure of an
+        asynchronous operations
+
+        three state
+        fullfilled 
+        rejected 
+        pending
+
+        creating a promise
+
+
+        consuming a promise
+        1) .then.catch
+        2) async await
+        let prom=new Promise((res,rej)=>{
+            let val=10
+        if(val==10){
+            res('promise is resolved')
+        }else{
+            rej('promise is rejected')
+        }
+       })
+//consuming a promise
+       prom.then((res)=>console.log(res))
+       .catch((err)=>console.log(err))
+
+       //using async await
+    async  function getprom(){
+        //it will the pause the execution until the promise is settled
+        let a=await prom
+        console.log(a)
+      }
+      getprom()
+
+
+      fetch()
+      it is used to make an network request (api calls)
+      it will return promise object
+
+      .then.catch   or async await
+      get ,post,put,delete
+
+
+      */ 
+     let apilink='https://fakestoreapi.com/products'
+     fetch(apilink).then((data)=>data.json())
+     .then((finaldata)=>console.log(finaldata))
+
+     async function getdata(){
+        let res=await fetch(apilink)
+        let finalres=await res.json()
+        console.log(finalres)
+     }
+     getdata()
+    </script>
+</body>
+</html>
