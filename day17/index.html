@@ -95,6 +95,29 @@
     <!-- 
     https://api.openweathermap.org/data/2.5/weather?q=egg&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb
     -->
+    <script>
+       async function getweather(){
+            let city=document.getElementById('city')
+            console.log(city.value)
+        let apilink=`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&units=metric&appid=466ddaa21a8de191e9f608bd11a56acb`
+        
+        let  data= await fetch(apilink)
+        let weatherdata=await data.json()
+        console.log(weatherdata)
+
+        let name=document.getElementById('name')
+        let temp=document.getElementById('temp')
+        let state=document.getElementById('state')
+        let humid=document.getElementById('humid')
+        name.innerHTML=city.value
+        temp.innerHTML=weatherdata.main.temp
+        humid.innerHTML=weatherdata.main.humidity
+        state.innerHTML=weatherdata.weather[0].main
+
+    }
+
+
+    </script>
 
     
   </body>
