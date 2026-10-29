@@ -153,5 +153,39 @@
     </div>
     <div id="tasklist"></div>
    </div>
+
+   <script>
+    let tasks=JSON.parse(localStorage.getItem('pfs6tasks')) || []
+     displaytask()
+    function addtask(){
+      let inp=document.getElementById('inp')
+      if(inp.value==''){
+        alert('please enter value')
+        return ""
+      }
+      tasks.push(inp.value)
+      console.log(tasks)
+      localStorage.setItem('pfs6tasks',JSON.stringify(tasks))
+      displaytask()
+    }
+    function displaytask(){
+      let tasklist=document.getElementById('tasklist')
+      tasklist.innerHTML=tasks.map((val,ind)=>{
+        return `
+        <div class='task'>
+         <p>${val}</p> 
+         <button class='delete-btn' onclick="deletetask(${ind})">del</button> 
+        </div>
+        `
+      }).join('')
+    }
+
+    function deletetask(ind){
+      tasks=tasks.filter((val,index)=>index!=ind)
+      localStorage.setItem('pfs6tasks',JSON.stringify(tasks))
+    displaytask()
+    }
+
+   </script>
   </body>
 </html>
